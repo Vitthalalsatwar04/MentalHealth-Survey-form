@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registation</title>
+</head>
+<style>
+    input[type=text],
+    input[type=number],
+    input[type=email],
+    input[type="textarea"] select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 2px solid rgb(34, 43, 57);
+        border-radius: 10px;
+        box-sizing: border-box;
+    }
+
+    input:hover {
+        box-shadow: 2px 2px 2px 2px rgb(96, 162, 38);
+    }
+
+    #hone {
+
+        font-family: Copperplate, Papyrus, fantasy;
+        text-align: center;
+        color: rgb(64, 151, 81);
+        text-shadow: 1px 1px 2px black, 0 0 25px rgb(232, 38, 17), 0 0 5px darkblue;
+    }
+
+    body {
+
+        background-image: url(userReg.jpg);
+        background-repeat: no-repeat;
+        justify-content: center;
+        margin: 20px;
+        padding: 50px;
+        background-color: #3f5c79;
+        
+    }
+
+    div {
+        font-family: Georgia;
+        color: rgb(204, 211, 214);
+        text-shadow: 2px 2px 4px rgb(163 120 120);
+    }
+
+    button {
+        align-content: center;
+        text-align: center;
+        width: 15vw;
+        color: white;
+        display: inline-block;
+        margin: 4px 2px;
+        padding: 8px 8px;
+        border-radius: 15px;
+        border: 3px solid rgb(123, 48, 124);
+        background-color: rgb(46, 121, 62);
+    }
+
+    button:hover {
+        box-shadow: 2px 2px 2px black;
+    }
+
+    #topbtn {
+        text-align: center;
+        margin-left: 22cm;
+
+    }
+
+    #submitbtn {
+        text-align: center;
+        margin-left: 12cm;
+
+    }
+
+    #hmpgbtn {
+        text-align: center;
+        margin-left: 1px;
+    }
+
+    form {
+        background-color: rgb(78, 64, 93);
+        padding: 30px 30px 30px 30px;
+        border-radius: 10px;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        width: auto;
+
+    }
+</style>
+
+<body>
+
+    <h1 id="hone">Personal Informations</h1>
+    <button id="hmpgbtn" type="submit"> <a href="userRegwp1.html" style="text-decoration: none; color: white;">
+            < Home Page</a></button>
+    <button id="topbtn" type="reset"><a href="userRegp2.html" style="text-decoration: none; color:white;">Fill Survey
+            Form ></a></button>
+    <br>
+    <br>
+    <!-- <Button id="hmpgbtn" type="button">Home Page</Button>
+    <Button id="topbtn" type="button">Fill Survey Form</Button> -->
+    <div>
+        <form name="userReg" action="userReg.php" method="post">
+            FirstName:<input type="text" placeholder="Enter your First Name" name="fname" required>
+            <br>
+            <br>
+            Middle Name:<input type="text" placeholder="Enter Your Middle Name" name="mname" required>
+            <br>
+            <br>
+            Last Name:<input type="text" placeholder="Enter Your Last Name" name="lname" required>
+            <br>
+            <br>
+            Email:<input type="email" placeholder="Enter Your Email" name="email" required>
+            <br>
+            <br>
+            Age: <input type="number" placeholder="Enter Your Age" name="age" required>
+            <br>
+            <br>
+            Address:<input type="text" placeholder="Enter Your Address" name="address" required>
+            <br>
+            <br>
+            <h4>What browser do you use?</h4>
+    <input type="radio" name="browser" value="gc" required>
+    <label for="google chorme">Google chorme</label><br>
+    <input type="radio" name="browser"  value="ff" required>
+    <label for="firefox">Firefox</label><br>
+    <input type="radio" name="browser" value="op" required>
+    <label for="opera">Opera</label><br>
+
+    </div>
+    <button id="submitbtn" type="submit"  > <a href="userRegp2.html" style="text-decoration: none; color: white;"> SUBMIT </a></button>
+    <button id="resetbtn" type="reset">RESET</button>
+    </form>
+
+
+</body>
+
+</html>

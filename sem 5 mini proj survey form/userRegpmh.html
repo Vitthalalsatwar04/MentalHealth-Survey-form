@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+ 
+    <title>Mental Health Survey Form</title>
+</head>
+<style>
+    textarea:hover {
+        box-shadow: 2px 2px 2px 2px rgb(96, 162, 38);
+    }
+
+    textarea {
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 10px;
+        border: 2px solid black;
+    }
+
+    input {
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    input:hover {
+        box-shadow: 2px 2px 2px 2px rgb(96, 162, 38);
+    }
+
+    body {
+        background-image: url(userReg.jpg);
+        font-family: Georgia;
+        justify-content: center;
+        color: rgb(204, 211, 214);
+        text-shadow: 2px 2px 2px rgb(163 120 120);
+        font-size: 18px;
+        background-size: 100%;
+        background-color: #3f5c79;
+    }
+
+
+
+    #hone {
+
+        font-family: Copperplate, Papyrus, fantasy;
+        text-align: center;
+        color: rgb(64, 151, 81);
+        text-shadow: 1px 1px 2px black, 0 0 25px rgb(232, 38, 17), 0 0 5px darkblue;
+    }
+
+    #forbox {
+        margin: 80px;
+        background-color: rgb(78, 64, 93);
+        padding: 30px 30px 30px 30px;
+        border-radius: 10px;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        width: auto;
+    }
+
+    button:hover {
+        box-shadow: 2px 2px 2px black;
+    }
+
+    #headwebname {
+        text-align: center;
+        text-shadow: 1px 1px 2px black, 0 0 25px rgb(232, 38, 17), 0 0 5px darkblue;
+    }
+
+    button {
+        align-content: center;
+        text-align: center;
+        width: 15vw;
+        color: white;
+        display: inline-block;
+        margin: 4px 2px;
+        padding: 8px 8px;
+        border-radius: 15px;
+        border: 3px solid rgb(123, 48, 124);
+        background-color: rgb(46, 121, 62);
+
+    }
+
+    #btnsbt {
+        margin-left: 14cm;
+    }
+    
+</style>
+
+
+<body>
+    <H1 id="hone" style="text-align: center;">Survery Form</H1>
+    <button class="btn" type="button"> <a href="userRegp1.html" style="color:white; text-decoration:none;">
+            < Personal Informations</a></button>
+    <form action="userRegSurveyForm.php" method="post">
+
+
+        <div id="forbox">
+            <h1 id="headwebname">MENTAL HEALTH SURVEY FORM</h1>
+
+            <h4>Please Fill Your  Information</h4>
+            <hr>
+            <!-- <h3>How did you hear about this website?</h3>
+            <input type="radio" name="hearabtweb" id="Social Media" value="socialmedia">
+            <label for="Social Media">Social Media</label><br>
+            <input type="radio" name="hearabtweb" id="Advertising" value="advertising">
+            <label for="Advertising">Advertising</label><br>
+            <input type="radio" name="hearabtweb" id="Search Engine" value="searchengine">
+            <label for="Search Engine">Search Engine</label><br>
+            <input type="radio" name="hearabtweb" id="Friend" value="friend">
+            <label for="Friend">Friend</label><br>
+            <input type="radio" name="hearabtweb" id="Other" value="other">
+            <label for="Other">Other</label><br><br>
+
+            <h3>What browser do you use?</h3>
+            <input type="radio" name="browseruse" id="Google Chrome" value="googlechorme">
+            <label for="Google Chrome">Google Chrome</label><br>
+            <input type="radio" name="browseruse" id="Firefox" value="firefox">
+            <label for="Firefox">Firefox</label><br>
+            <input type="radio" name="browseruse" id="Opera" value="opera">
+            <label for="Opera">Opera</label><br><br>
+
+            <h3>Which device did you use to access the website?</h3>
+            <input type="radio" name="deviceuse" id="desktop" value="desktop">
+            <label for="desktop">Desktop/Laptop</label><br>
+            <input type="radio" name="deviceuse" id="pad" value="pad">
+            <label for="pad">Pad device</label><br>
+            <input type="radio" name="deviceuse" id="Mobile" value="mobileu">
+            <label for="Mobile">Mobile Device</label><br><br>
+
+            <h3>The Information on this website is logically oranized?</h3>
+            <input type="radio" name="infoorganzed" id="yes" value="yesorganized">
+            <label for="yes">Yes</label><br>
+            <input type="radio" name="infoorganzed" id="no" value="notorganized">
+            <label for="no">No</label><br><br>
+
+
+            <h4>How many times have you visited website in the past month?</h4>
+            <input type="radio" name="howtimevisit" id="None" value="None">
+            <label for="None">None</label><br>
+            <input type="radio" name="howtimevisit" id="Once" value="Once">
+            <label for="Once">Once</label><br>
+            <input type="radio" name="howtimevisit" id="More than once" value="Morethanonce">
+            <label for="More than once">More than once</label><br><br>
+
+            <h4>What is the primary reason for your visit to website?</h4>
+            <input type="radio" name="reasontovisit"  id="To make a purchaes" value="Tomakeapurchaes">
+            <label for="To make a purchaes">To make a purchaes</label><br>
+            <input type="radio" name="reasontovisit" id="To contact customer service" value="Tocontactcustomerservice">
+            <label for="To contact customer service">To contact a customer service</label><br><br>
+
+
+            <h3>Are you satisfied that you found out the website?</h3>
+            <input type="radio" name="findwebsat" id="VSatisfied" value="vsatisfied">
+            <label for="VSatisfied">Very Satisfied</label><br>
+            <input type="radio" name="findwebsat" id="Satisfied" value="satisfied">
+            <label for="Satisfied">Satisfied</label><br>
+            <input type="radio" name="findwebsat" id="Neutral" value="Neutral">
+            <label for="Neutral">Neutral</label><br>
+            <input type="radio" name="findwebsat" id="Unsatisfied" value="Unsatisfied">
+            <label for="Unsatisfied">Unsatisfied</label><br>
+            <input type="radio" name="findwebsat" id="VeryUnsatisfied" value="VeryUnsatisfied">
+            <label for="VeryUnsatisfied">Very Unsatisfied</label><br>
+
+            <h3>Suggestions to improve website(Optional)</h3>
+            <textarea name="whatinfoprovide" placeholder="Suggestion...." id="" cols="80" rows="8"></textarea>
+            <hr> -->
+            <div>
+                <div class="row col-5">
+                    <h4 class="fw-bold text-center mt-3"></h4>
+                    <form class=" bg-white px-4" action="">
+                        <p class="fw-bold">How do you feel in college.</p>
+                        <div class="form-check mb-2">
+                        <input class="form-check-input" type="radio" name="exampleForm" id="radioExample1" />
+                        <label class="form-check-label" for="radioExample1">
+                          Exiciting
+                          </label>
+                      </div>
+                      <div class="form-check mb-2">
+                          <input class="form-check-input" type="radio" name="exampleForm" id="radioExample2" />
+                          <label class="form-check-label" for="radioExample2">
+                              Instresting
+                          </label>
+                      </div>
+                      <div class="form-check mb-2">
+                          <input class="form-check-input" type="radio" name="exampleForm" id="radioExample3" />
+                          <label class="form-check-label" for="radioExample3">
+                              Happy
+                          </label>
+                      </div>
+                      <div class="form-check mb-2">
+                          <input class="form-check-input" type="radio" name="exampleForm" id="radioExample4" />
+                          <label class="form-check-label" for="radioExample4">
+                              Boored
+                          </label>
+                      </div>
+          
+                      <div class="form-check mb-2">
+                          <input class="form-check-input" type="radio" name="exampleForm" id="radioExample5" />
+                          <label class="form-check-label" for="radioExample5" >
+                              Not Intrested
+                          </label>
+                      </div>
+                      <br>
+                          <p class="fw-bold">Are you overthinker about the your college. ?</p>
+                          <div class="form-check mb-2">
+                          <input class="form-check-input" type="radio" name="overthinkers" id="radioExample31" />
+                          <label class="form-check-label" for="radioExample31">
+                              For all the time
+                            </label>
+                        </div>
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" type="radio" name="overthinkers" id="radioExample32" />
+                            <label class="form-check-label" for="radioExample32">
+                                For some time
+                            </label>
+                        </div>
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" type="radio" name="overthinkers" id="radioExample33" />
+                            <label class="form-check-label" for="radioExample33">
+                                For few Hours
+                            </label>
+                      </div>
+                      <div class="form-check mb-2">
+                          <input class="form-check-input" type="radio" name="overthinkers" id="radioExample34" />
+                          <label class="form-check-label" for="radioExample34">
+                              Not for Much
+                          </label>
+                    </div>
+                    <div class="form-check mb-2">
+                      <input class="form-check-input" type="radio" name="overthinkers" id="radioExample35" />
+                      <label class="form-check-label" for="radioExample35">
+                          Not at all
+                      </label>
+                </div>
+                <br>
+                          <p class="fw-bold">How do you feel about your Branch ?</p>
+                          <div class="form-check mb-2">
+                          <input class="form-check-input" type="radio" name="feel" id="radioExample41" />
+                          <label class="form-check-label" for="radioExample41">
+                              Exiciting
+                            </label>
+                        </div>
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" type="radio" name="feel" id="radioExample42" />
+                            <label class="form-check-label" for="radioExample42">
+                              Instresting
+                            </label>
+                        </div>
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" type="radio" name="feel" id="radioExample43" />
+                            <label class="form-check-label" for="radioExample43">
+                                Better
+                            </label>
+                      </div>
+                      <div class="form-check mb-2">
+                          <input class="form-check-input" type="radio" name="feel" id="radioExample44" />
+                          <label class="form-check-label" for="radioExample44">
+                              Good
+                          </label>
+                    </div>
+                    <div class="form-check mb-2">
+                      <input class="form-check-input" type="radio" name="feel" id="radioExample45" />
+                      <label class="form-check-label" for="radioExample45">
+                          Not Instresting
+                      </label>
+                </div>
+          
+                <br>
+                          <p class="fw-bold">Does the college offers you for any Activity</p>
+                          <div class="form-check mb-2">
+                          <input class="form-check-input" type="radio" name="clgofferactivity" id="radioExample51" />
+                          <label class="form-check-label" for="radioExample51">
+                              yes, They do
+                            </label>
+                        </div>
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" type="radio" name="clgofferactivity" id="radioExample52" />
+                            <label class="form-check-label" for="radioExample52">
+                                Some do, Some don't
+                            </label>
+                        </div>
+                        <div class="form-check mb-2">
+                          <input class="form-check-input" type="radio" name="clgofferactivity" id="radioExample53" />
+                          <label class="form-check-label" for="radioExample53">
+                              No, they are out of touch
+                          </label>
+                      </div>
+                         
+          
+                <br>
+                          <p class="fw-bold">Does you have any Mentor?</p>
+                          <div class="form-check mb-2">
+                          <input class="form-check-input" type="radio" name="haveanymentor" id="radioExample61" />
+                          <label class="form-check-label" for="radioExample61">
+                              Yes, I have
+                            </label>
+                        </div>
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" type="radio" name="haveanymentor" id="radioExample62" />
+                            <label class="form-check-label" for="radioExample62">
+                                No
+                            </label>
+                        </div>
+          
+                <br>
+                          <p class="fw-bold">Does you or Mentor Interact with you ?</p>
+                          <div class="form-check mb-2">
+                          <input class="form-check-input" type="radio" name="exampleForm" id="radioExample71" />
+                          <label class="form-check-label" for="radioExample71">
+                              Yes, we Interact.
+                            </label>
+                        </div>
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" type="radio" name="exampleForm" id="radioExample72" />
+                            <label class="form-check-label" for="radioExample72">
+                                Only for the perticular reasons.
+                            </label>
+                        </div>
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" type="radio" name="exampleForm" id="radioExample73" />
+                            <label class="form-check-label" for="radioExample73">
+                              No, Not at all.
+                            </label>
+                      </div>
+                     
+          
+                <br>
+                          <p class="fw-bold">Did you think teachers and other staff members understand the mentel Health ?</p>
+                          <div class="form-check mb-2">
+                          <input class="form-check-input" type="radio" name="technstfundersmhelth" id="radioExample81" />
+                          <label class="form-check-label" for="radioExample81">
+                              yes, they do
+                            </label>
+                        </div>
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" type="radio" name="technstfundersmhelth" id="radioExample82" />
+                            <label class="form-check-label" for="radioExample82">
+                                Depands on ther mind
+                            </label>
+                        </div>
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" type="radio" name="technstfundersmhelth" id="radioExample83" />
+                            <label class="form-check-label" for="radioExample83">
+                                No, Not at all
+                            </label>
+                      </div>
+                      <div class="form-check mb-2">
+                          <input class="form-check-input" type="radio" name="technstfundersmhelth" id="radioExample84" />
+                          <label class="form-check-label" for="radioExample84">
+                              Not for Much
+                          </label>
+                    </div>
+                    <div class="form-check mb-2">
+                      <input class="form-check-input" type="radio" name="technstfundersmhelth" id="radioExample85" />
+                      <label class="form-check-label" for="radioExample85">
+                          Not at all
+                      </label>
+                </div>
+          
+                <br>
+                          <p class="fw-bold">does your college offers more mental health resources<br>(like more hours of counseling or group conversions ),<br>
+                          how likely would you be to use them ?.
+                          </p>
+                          <div class="form-check mb-2">
+                          <input class="form-check-input" type="radio" name="clgofrmhresorce" id="radioExample91" />
+                          <label class="form-check-label" for="radioExample91">
+                              very Likely
+                            </label>
+                        </div>
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" type="radio" name="clgofrmhresorce" id="radioExample92" />
+                            <label class="form-check-label" for="radioExample92">
+                                likely
+                            </label>
+                        </div>
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" type="radio" name="clgofrmhresorce" id="radioExample93" />
+                            <label class="form-check-label" for="radioExample93">
+                                Unlikely
+                            </label>
+                      </div>
+                      <div class="form-check mb-2">
+                          <input class="form-check-input" type="radio" name="clgofrmhresorce" id="radioExample94" />
+                          <label class="form-check-label" for="radioExample94">
+                              Very Unlikely
+                          </label>
+                    </div>
+                    <div class="form-check mb-2">
+                      <input class="form-check-input" type="radio" name="clgofrmhresorce" id="radioExample95" />
+                      <label class="form-check-label" for="radioExample95">
+                          Not at all
+                      </label>
+                </div>
+          
+                <br>
+                          <p class="fw-bold">If you Struggling With Something emotional,like Depression, Anxiety or thoughts of Sucide, </p>
+                          <div class="form-check mb-2">
+                          <input class="form-check-input" type="radio" name="ifyoustrglhealtprob" id="radioExample101" />
+                          <label class="form-check-label" for="radioExample101">
+                              For all the time
+                            </label>
+                        </div>
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" type="radio" name="ifyoustrglhealtprob" id="radioExample102" />
+                            <label class="form-check-label" for="radioExample102">
+                                For some time
+                            </label>
+                        </div>
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" type="radio" name="ifyoustrglhealtprob" id="radioExample103" />
+                            <label class="form-check-label" for="radioExample103">
+                                For few Hours
+                            </label>
+                      </div>
+                      <div class="form-check mb-2">
+                          <input class="form-check-input" type="radio" name="ifyoustrglhealtprob" id="radioExample104" />
+                          <label class="form-check-label" for="radioExample104">
+                              Not for Much
+                          </label>
+                    </div>
+                    <div class="form-check mb-2">
+                      <input class="form-check-input" type="radio" name="ifyoustrglhealtprob" id="radioExample105" />
+                      <label class="form-check-label" for="radioExample105">
+                          Not at all
+                      </label>
+                </div>
+          
+                <br>
+                          <p class="fw-bold">Are you overthinker about the your college. ?</p>
+                          <div class="form-check mb-2">
+                          <input class="form-check-input" type="radio" name="overthinkaboutclg" id="radioExample111" />
+                          <label class="form-check-label" for="radioExample111">
+                              For all the time
+                            </label>
+                        </div>
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" type="radio" name="overthinkaboutclg" id="radioExample112" />
+                            <label class="form-check-label" for="radioExample112">
+                                For some time
+                            </label>
+                        </div>
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" type="radio" name="overthinkaboutclg" id="radioExample113" />
+                            <label class="form-check-label" for="radioExample113">
+                                For few Hours
+                            </label>
+                      </div>
+                      <div class="form-check mb-2">
+                          <input class="form-check-input" type="radio" name="overthinkaboutclg" id="radioExample114" />
+                          <label class="form-check-label" for="radioExample114">
+                              Not for Much
+                          </label>
+                    </div>
+                    <div class="form-check mb-2">
+                      <input class="form-check-input" type="radio" name="overthinkaboutclg" id="radioExample115" />
+                      <label class="form-check-label" for="radioExample115">
+                          Not at all
+                      </label>
+                </div>
+          
+                <br>
+                        
+                </div>
+                      
+                  </form>
+                  <div class="text-end">
+                      <button type="button" class="btn btn-primary">Submit</button>
+                  </div>
+              </div>
+
+            </div>
+
+
+
+
+           
+        </div>
+
+        <button type="submit" id="btnsbt">SUBMIT</button>
+        <button id="resetbtn" type="reset">RESET</button>
+    </form>
+
+
+
+</body>
+
+</html>

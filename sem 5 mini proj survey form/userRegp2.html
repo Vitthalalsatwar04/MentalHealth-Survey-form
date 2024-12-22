@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+</head>
+<style>
+    textarea:hover {
+        box-shadow: 2px 2px 2px 2px rgb(96, 162, 38);
+    }
+
+    textarea {
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 10px;
+        border: 2px solid black;
+    }
+
+    input {
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    input:hover {
+        box-shadow: 2px 2px 2px 2px rgb(96, 162, 38);
+    }
+
+    body {
+        background-image: url(userReg.jpg);
+        font-family: Georgia;
+        justify-content: center;
+        color: rgb(204, 211, 214);
+        text-shadow: 2px 2px 2px rgb(163 120 120);
+        font-size: 18px;
+        background-size: 100%;
+        background-color: #3f5c79;
+    }
+
+
+
+    #hone {
+
+        font-family: Copperplate, Papyrus, fantasy;
+        text-align: center;
+        color: rgb(64, 151, 81);
+        text-shadow: 1px 1px 2px black, 0 0 25px rgb(232, 38, 17), 0 0 5px darkblue;
+    }
+
+    #forbox {
+        margin: 80px;
+        background-color: rgb(78, 64, 93);
+        padding: 30px 30px 30px 30px;
+        border-radius: 10px;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        width: auto;
+    }
+
+    button:hover {
+        box-shadow: 2px 2px 2px black;
+    }
+
+    #headwebname {
+        text-align: center;
+        text-shadow: 1px 1px 2px black, 0 0 25px rgb(232, 38, 17), 0 0 5px darkblue;
+    }
+
+    button {
+        align-content: center;
+        text-align: center;
+        width: 15vw;
+        color: white;
+        display: inline-block;
+        margin: 4px 2px;
+        padding: 8px 8px;
+        border-radius: 15px;
+        border: 3px solid rgb(123, 48, 124);
+        background-color: rgb(46, 121, 62);
+
+    }
+
+    #btnsbt {
+        margin-left: 14cm;
+    }
+</style>
+
+<body>
+    <H1 id="hone" style="text-align: center;">Survery Form</H1>
+    <button class="btn" type="button"> <a href="userRegp1.html" style="color:white; text-decoration:none;">
+            < Personal Informations</a></button>
+    <form action="userRegSurveyForm.php" method="post">
+
+
+        <div id="forbox">
+            <h1 id="headwebname">MENTAL HEALTH SURVEY FORM</h1>
+
+            <h4>Please Fill In The Website Information</h4>
+            <hr>
+            <h3>How did you hear about this website?</h3>
+            <input type="radio" name="hearabtweb" id="Social Media" value="socialmedia">
+            <label for="Social Media">Social Media</label><br>
+            <input type="radio" name="hearabtweb" id="Advertising" value="advertising">
+            <label for="Advertising">Advertising</label><br>
+            <input type="radio" name="hearabtweb" id="Search Engine" value="searchengine">
+            <label for="Search Engine">Search Engine</label><br>
+            <input type="radio" name="hearabtweb" id="Friend" value="friend">
+            <label for="Friend">Friend</label><br>
+            <input type="radio" name="hearabtweb" id="Other" value="other">
+            <label for="Other">Other</label><br><br>
+
+            <h3>What browser do you use?</h3>
+            <input type="radio" name="browseruse" id="Google Chrome" value="googlechorme">
+            <label for="Google Chrome">Google Chrome</label><br>
+            <input type="radio" name="browseruse" id="Firefox" value="firefox">
+            <label for="Firefox">Firefox</label><br>
+            <input type="radio" name="browseruse" id="Opera" value="opera">
+            <label for="Opera">Opera</label><br><br>
+
+            <h3>Which device did you use to access the website?</h3>
+            <input type="radio" name="deviceuse" id="desktop" value="desktop">
+            <label for="desktop">Desktop/Laptop</label><br>
+            <input type="radio" name="deviceuse" id="pad" value="pad">
+            <label for="pad">Pad device</label><br>
+            <input type="radio" name="deviceuse" id="Mobile" value="mobileu">
+            <label for="Mobile">Mobile Device</label><br><br>
+
+            <h3>The Information on this website is logically oranized?</h3>
+            <input type="radio" name="infoorganzed" id="yes" value="yesorganized">
+            <label for="yes">Yes</label><br>
+            <input type="radio" name="infoorganzed" id="no" value="notorganized">
+            <label for="no">No</label><br><br>
+
+
+            <h4>How many times have you visited website in the past month?</h4>
+            <input type="radio" name="howtimevisit" id="None" value="None">
+            <label for="None">None</label><br>
+            <input type="radio" name="howtimevisit" id="Once" value="Once">
+            <label for="Once">Once</label><br>
+            <input type="radio" name="howtimevisit" id="More than once" value="Morethanonce">
+            <label for="More than once">More than once</label><br><br>
+
+            <h4>What is the primary reason for your visit to website?</h4>
+            <input type="radio" name="reasontovisit"  id="To make a purchaes" value="Tomakeapurchaes">
+            <label for="To make a purchaes">To make a purchaes</label><br>
+            <input type="radio" name="reasontovisit" id="To contact customer service" value="Tocontactcustomerservice">
+            <label for="To contact customer service">To contact a customer service</label><br><br>
+
+
+            <h3>Are you satisfied that you found out the website?</h3>
+            <input type="radio" name="findwebsat" id="VSatisfied" value="vsatisfied">
+            <label for="VSatisfied">Very Satisfied</label><br>
+            <input type="radio" name="findwebsat" id="Satisfied" value="satisfied">
+            <label for="Satisfied">Satisfied</label><br>
+            <input type="radio" name="findwebsat" id="Neutral" value="Neutral">
+            <label for="Neutral">Neutral</label><br>
+            <input type="radio" name="findwebsat" id="Unsatisfied" value="Unsatisfied">
+            <label for="Unsatisfied">Unsatisfied</label><br>
+            <input type="radio" name="findwebsat" id="VeryUnsatisfied" value="VeryUnsatisfied">
+            <label for="VeryUnsatisfied">Very Unsatisfied</label><br>
+
+            <h3>Suggestions to improve website(Optional)</h3>
+            <textarea name="whatinfoprovide" placeholder="Suggestion...." id="" cols="80" rows="8"></textarea>
+            <hr>
+
+
+
+
+           
+        </div>
+
+        <button type="submit" id="btnsbt">SUBMIT</button>
+        <button id="resetbtn" type="reset">RESET</button>
+    </form>
+
+
+
+</body>
+
+</html>
